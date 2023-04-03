@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+header .cabecalho h1 {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    list-style: none;
+    margin-right: 16px;
+}
+
+header nav li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section .container {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+section img {
+    max-width: 640px;
+    margin-right: 40px; 
+}
+
+section h2 {
+    color: red;
+    margin-bottom: 16px;
+    border-bottom: 1px solid red;
+}
+.produtos-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+ 
+  .produto {
+    width: 23%;
+    text-align: left;
+  }
+  
+  .produto img {
+    width: 100%;
+    min-width: 236px;
+    min-height: 117px;
+  }
+  
+  .produto h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .produto p {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  .produto button {
+    margin-top: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.container h2 {
+    color: red;
+    margin-bottom: 16px;
+    border-bottom: 1px solid red;
+    margin-top: 46px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+section .container {
+  display: block;
+  align-items: top;
+  justify-content: space-between;
+  margin-top: 32px;
+  max-width: 90%;
+}
+
+header .cabecalho h1 {
+  width: 100%;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+section .container {
+  display: block;
+  align-items: top;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+section img {
+  max-width: 320px;
+  margin-right: 40px; 
+}
+
+.cabecalho {
+  display: block;
+  background-color: red;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  max-width: 90%;
+}
+
+.produtos-container {
+  display: block;
+  justify-content: space-between;
+  max-width: 90%;
+}
+
+.produto button {
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produto {
+  width: 90%;
+  text-align: left;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+section .container {
+  display: block;
+  align-items: top;
+  margin-top: 16px;
+}
+
+h2 {
+  max-width: 90%;
+}
+
+.produtos-container {
+  max-width: 90%;
+  grid-template-columns: repeat(2, 49%);
+  display: grid
+}
+
+.produto button {
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produto {
+  width: 90%;
+  text-align: left;
+}
+
+.produto img {
+  width: 49%;
+}
+}
